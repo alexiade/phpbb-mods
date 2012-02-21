@@ -1,0 +1,7 @@
+Subject: Konto aktiveeritud
+
+Tere {USERNAME},
+
+Sinu konto foorumis "{SITENAME}" on nüüd aktiveeritud foorumi administraatori poolt, võid nüüd sisse logida.
+
+{EMAIL_SIG}
