@@ -3453,12 +3453,12 @@ function get_preg_expression($mode)
 
 		case 'bbcode_htm':
 			return array(
-				'#<!\-\- e \-\-><a href="mailto:(.*?)">.*?</a><!\-\- e \-\->#',
-				'#<!\-\- l \-\-><a (?:class="[\w-]+" )?href="(.*?)(?:(&amp;|\?)sid=[0-9a-f]{32})?">.*?</a><!\-\- l \-\->#',
-				'#<!\-\- ([mw]) \-\-><a (?:class="[\w-]+" )?href="(.*?)">.*?</a><!\-\- \1 \-\->#',
-				'#<!\-\- s(.*?) \-\-><img src="\{SMILIES_PATH\}\/.*? \/><!\-\- s\1 \-\->#',
-				'#<!\-\- .*? \-\->#s',
-				'#<.*?>#s',
+			'#<!\-\- e \-\-><a href="mailto:(.*?)">.*?</a><!\-\- e \-\->#',
+			'#<!\-\- l \-\-><a (?:class="[\w-]+" )?href="(.*?)(?:(&amp;|\?)sid=[0-9a-f]{32})?" onclick="window\.open\(this\.href\);return false;">.*?</a><!\-\- l \-\->#',
+			'#<!\-\- ([mw]) \-\-><a (?:class="[\w-]+" )?href="(.*?)" onclick="window\.open\(this\.href\);return false;">.*?</a><!\-\- \1 \-\->#',
+			'#<!\-\- s(.*?) \-\-><img src="\{SMILIES_PATH\}\/.*? \/><!\-\- s\1 \-\->#',
+			'#<!\-\- .*? \-\->#s',
+			'#<.*?>#s',
 			);
 		break;
 
